@@ -1,0 +1,65 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<center>
+        <div class="heder">
+            <input type="text" placeholder="search" name="search">  
+            <button class="add" onclick="add()">Add</button>
+            </div>
+       
+		 <table border="4" id="myForm"class="form-popup" >
+			<thead>
+				<tr>
+					<th>EmployeeID</th>
+					<td><input type="number" name="Eid" id="Eid"></td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>Employee Name</th>
+					<td><input type="text" name="Ename" id="Ename"></td>
+				</tr>
+				<tr>
+					<th>Date of joining</th>
+					<td><input type="date" name="DOJ" id="DOJ"></td>
+				</tr>
+				<tr>
+				<tr>
+					<th>Year of Experience</th>
+					<td><input type="number" name="YOE" id="YOE"></td>
+				</tr>
+				<tr>
+					<th>Designation</th>
+					<td><input type="text" name="Designation" id="Designation"></td>
+				</tr>
+				<tr id="btna">
+					<td colspan="2"><input type="button" name="button" id="btn" value="SAVE" onclick="AddRow()">
+                    <button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button></td>
+                </tr>
+			</tbody>
+		</table> 
+
+		<table border="4" id="show">
+			<thead>
+				<tr>
+					<th>Eid</th>
+					<th>EName</th>
+					<th>DOJ</th>
+					<th>YOE</th>
+					<th>Designation</th>
+				</tr>
+			</thead>
+		</table>
+	</center>
+	
+	<script src="./assin.js"></script>
+    
+</body>
+</html>
